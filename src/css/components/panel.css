@@ -1,0 +1,23 @@
+.panel {
+  border-radius: 5px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: transparent;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.06);
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  overflow: hidden;
+  max-width: 100%;
+}
+.panel.back-panel {
+  box-sizing: border-box;
+  padding: 20px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-right-color: rgba(255, 255, 255, 0.1);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}/*# sourceMappingURL=panel.css.map */

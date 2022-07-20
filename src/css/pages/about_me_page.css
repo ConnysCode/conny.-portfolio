@@ -1,0 +1,44 @@
+.about-me-page-skill-row {
+  display: flex;
+  flex-flow: row;
+  gap: 20px;
+}
+
+.about-me-page-profile-row {
+  display: grid;
+  grid-template-columns: 185px 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 20px;
+  grid-template-areas: "grid-left-column grid-text";
+  max-width: 100%;
+}
+@media only screen and (max-width: 1000px) {
+  .about-me-page-profile-row {
+    grid-template-areas: "grid-left-column" "grid-text";
+    grid-template-columns: 1fr;
+    grid-template-rows: 185px 1fr;
+    gap: 20px 0;
+  }
+}
+
+.about-me-page-left-column {
+  grid-area: grid-left-column;
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+}
+@media only screen and (max-width: 1000px) {
+  .about-me-page-left-column {
+    flex-flow: row;
+  }
+}
+
+.about-me-page-picture {
+  width: 185px;
+  height: 185px;
+  flex-shrink: 0;
+}
+
+.about-me-profile-text {
+  grid-area: grid-text;
+}/*# sourceMappingURL=about_me_page.css.map */

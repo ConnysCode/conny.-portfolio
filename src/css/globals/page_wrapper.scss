@@ -1,0 +1,26 @@
+@import "../config.scss";
+
+.page-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page-container {
+  width: 855px;
+  padding: 80px 20px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 50px;
+  flex-flow: column;
+  z-index: 5;
+  
+  @media only screen and (max-width: $window-medium) {
+    width: 80%;
+  }
+}

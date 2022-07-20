@@ -1,0 +1,54 @@
+@charset "UTF-8";
+.page {
+  z-index: 5 !important;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  text-align: left;
+}
+.page .page-title + .page-content {
+  margin-top: 20px;
+}
+.page .page-content {
+  line-height: 40px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.page ul {
+  line-height: 40px;
+  list-style: none;
+  font-size: 20px;
+}
+.page ul li::before {
+  content: "•";
+  color: #1a1a2e;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.page.hidden {
+  opacity: 0;
+  transform: translateX(-10px);
+}
+
+.page-arrow {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  opacity: 1;
+  font-size: 40px;
+  height: 40px;
+  margin-left: -45px;
+  margin-top: 6px;
+}
+.page-arrow path {
+  fill: white;
+}
+.page-arrow:hover {
+  transform: translateX(-5px);
+}
+.page-arrow:hover path {
+  fill: #ff9ebc;
+}
+
+.blog-page .page-content {
+  padding: 20px;
+}/*# sourceMappingURL=page.css.map */

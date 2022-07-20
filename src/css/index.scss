@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #6a1d2a;
+  * {
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+}
+#root {
+  height: fit-content !important;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.notRendered {
+  opacity: 0;
+  transform: translateY(-5px);
+}
+
+.rendered {
+  opacity: 100;
+}
+
+#page-image {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background: url("http://cdn.namespace.media/s/GQwFrCeR6JkSR73/download/bg_smaller-smaller.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.25;
+  filter: blur(50px);
+  pointer-events: none;
+  z-index: 3;
+  transform: scale(1.1);
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#page-gradient {
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  background: repeating-linear-gradient(210deg, #a83279 0%, #313131 100%);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+a.menu-entry {
+  display: flex;
+
+  &:hover {
+    padding-left: 15px;
+  }
+}

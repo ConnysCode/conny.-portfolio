@@ -1,0 +1,22 @@
+.button {
+  background-color: rgba(255, 158, 188, 0.2);
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-right-color: rgba(255, 255, 255, 0.1);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+.button:hover {
+  cursor: pointer;
+  background-color: rgba(255, 158, 188, 0.5);
+  transform: scale(0.99);
+}
+.button:active {
+  background-color: rgba(255, 158, 188, 0.3);
+  transform: scale(0.97);
+}/*# sourceMappingURL=button.css.map */

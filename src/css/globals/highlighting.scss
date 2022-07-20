@@ -1,0 +1,54 @@
+@import "../config.scss";
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.accent {
+  color: $accent-color;
+  
+  // font-weight: 500;
+  &.thicc {
+    font-weight: 700;
+    // text-decoration: underline;
+  }
+}
+
+.cursor {
+  @keyframes cursor-blink {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  &::after {
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    content: "|";
+    display: inline-block;
+    opacity: 1;
+    animation: cursor-blink 1s steps(1) infinite;
+  }
+}
+
+ul,
+p {
+  color: $text-color;
+  font-size: 18px;
+  margin: 0;
+  text-align: justify;
+  text-align-last: left;
+}
+
+a {
+  text-decoration: none;
+  color: $accent-color;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
