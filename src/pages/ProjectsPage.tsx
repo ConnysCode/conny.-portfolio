@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import { AccentText } from "../components/Tagging";
 import Page from "../components/Page";
 import Title from "../components/Title";

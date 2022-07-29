@@ -65,7 +65,7 @@ const SkillStars = (props: { title: string; rating: number }) => {
       rating--;
     }
     setStars(newStars);
-  }, []);
+  }, [props.rating, props.title]);
 
   return (
     <div className={`skill-star-container`}>

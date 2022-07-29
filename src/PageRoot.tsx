@@ -1,11 +1,7 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import {
-  BrowserRouter as Router,
   Routes,
   Route,
-  Link,
-  Navigate,
-  useLocation,
 } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import "./css/globals/highlighting.css";

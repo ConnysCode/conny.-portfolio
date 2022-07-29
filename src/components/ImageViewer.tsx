@@ -2,7 +2,6 @@ import React from "react";
 import "../css/components/image_viewer.css";
 import { T_DisplayImageViewer } from "../interfaces/FunctionTypes";
 import Button from "./Button";
-import Panel from "./Panel";
 
 const ImageViewer = (props: {displayImageViewer: T_DisplayImageViewer, visible: boolean; image: string }) => {
   return (
@@ -27,7 +26,7 @@ const ImageViewer = (props: {displayImageViewer: T_DisplayImageViewer, visible: 
             </svg>
         </Button>
 
-        <img src={props.image} />
+        <img alt="Detailed Popup" src={props.image} />
       </div>
     </div>
   );

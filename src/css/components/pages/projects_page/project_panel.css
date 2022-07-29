@@ -35,6 +35,12 @@
   gap: 20px;
   flex-flow: column;
 }
+@media only screen and (max-width: 600px) {
+  .project-panel-right p {
+    font-size: 15px;
+    line-height: 2;
+  }
+}
 
 .project-panel-image {
   background-size: cover;
@@ -82,4 +88,9 @@
 .project-panel-image-list .project-panel-image-list-image:active {
   transform: scale(0.9);
   opacity: 0.75;
+}
+@media only screen and (max-width: 600px) {
+  .project-panel-image-list .project-panel-image-list-image {
+    min-width: 50px;
+  }
 }/*# sourceMappingURL=project_panel.css.map */

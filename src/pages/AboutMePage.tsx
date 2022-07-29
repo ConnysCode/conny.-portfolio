@@ -1,20 +1,18 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { AccentText } from "../components/Tagging";
 import Page from "../components/Page";
 import Title from "../components/Title";
 import { T_ChangePageDesign } from "../interfaces/FunctionTypes";
 import "../css/pages/projects_page.css";
-import ProjectPanel from "../components/pages/projects_page/ProjectPanel";
 import SkillTile from "../components/SkillTile";
 import Panel from "../components/Panel";
 import "../css/pages/about_me_page.css";
 
 const AboutMePage = (props: { changePageDesign: T_ChangePageDesign }) => {
-  const [hoveredProject, setHoveredProject] = useState<string | undefined>();
   useEffect(() => {
     props.changePageDesign({});
-  }, []);
+  }, [props]);
   return (
     <>
       <Page
@@ -46,13 +44,14 @@ const AboutMePage = (props: { changePageDesign: T_ChangePageDesign }) => {
                 extraClasses={["about-me-page-picture"]}
               >
                 <img
+                  alt="This is me!"
                   className="panel"
                   src={
                     "http://cdn.namespace.media/s/CAww88pTJewk4wN/download/290801750_609485650325585_2289180651016017925_n.jpg"
                   }
                 />
               </Panel>
-              <Panel variant="back-panel" extraClasses={["flex-grow"]}>
+              <Panel variant="back-panel">
                 <>
                   <SkillTile
                     ratings={[
@@ -106,7 +105,7 @@ const AboutMePage = (props: { changePageDesign: T_ChangePageDesign }) => {
                 <SkillTile
                   ratings={[
                     { rating: 5, title: `Deutsch` },
-                    { rating: 5, title: `English` },
+                    { rating: 4.4, title: `English` },
                   ]}
                 />
               </>
@@ -128,7 +127,7 @@ const AboutMePage = (props: { changePageDesign: T_ChangePageDesign }) => {
           </div>
         </>
       </Page>
-      <Page variant="blog-page" panelBackground>
+      <Panel extraClasses={"about-me-page-hire-links"} variant="back-panel">
         <>
           <Title
             variant="panel-title"
@@ -154,7 +153,7 @@ const AboutMePage = (props: { changePageDesign: T_ChangePageDesign }) => {
             </p>
           </a>
         </>
-      </Page>
+      </Panel>
     </>
   );
 };

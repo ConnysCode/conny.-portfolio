@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import "../css/globals/page.css";
 import Panel from "./Panel";
-import Title from "./Title";
 
 const Page = (props: {
   variant?: `projects-page` | `about-me-page` | `blog-page`;

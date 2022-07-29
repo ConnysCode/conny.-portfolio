@@ -35,6 +35,12 @@
   display: flex;
   gap: 20px;
   flex-flow: column;
+  @media only screen and (max-width: $window-small) {
+    p{
+      font-size: 15px;
+      line-height: 2;
+    }
+  }
 }
 
 .project-panel-image {
@@ -81,6 +87,9 @@
     &:active {
       transform: scale(0.9);
       opacity: .75;
+    }
+    @media only screen and (max-width: $window-small) {
+      min-width: 50px;
     }
   }
 }

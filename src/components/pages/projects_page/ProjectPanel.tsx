@@ -1,8 +1,6 @@
 import Panel from "../../Panel";
 import "../../../css/components/pages/projects_page/project_panel.css";
 import Title from "../../Title";
-import SkillTile from "../../SkillTile";
-import { AccentText } from "../../Tagging";
 import Button from "../../../components/Button";
 import { T_DisplayImageViewer } from "../../../interfaces/FunctionTypes";
 
