@@ -51,15 +51,6 @@ const HomePage = (props: { changePageDesign: T_ChangePageDesign }) => {
             My <AccentText variant="thicc">Github.</AccentText>
           </p>
         </a>
-        {/* {cookies.visitedResume ? ( */}
-        <Link className={`menu-entry`} to={`/morian/lebenslauf`}>
-          <p>
-            My <AccentText variant="thicc">CV.</AccentText>
-          </p>
-        </Link>
-        {/* ) : (
-            <></>
-          )} */}
       </>
     </Page>
   );

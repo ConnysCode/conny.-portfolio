@@ -54,20 +54,6 @@ const PageIndex = () => {
     <>
       <Routes>
         <Route
-          caseSensitive
-          path={`/morian/cv`}
-          element={
-            <PageWrapper
-              displayImageViewer={displayImageViewer}
-              ivImage={imageViewerImage}
-              ivVisible={imageViewerVisible}
-            >
-              {/* <Lebenslauf /> */}
-              <></>
-            </PageWrapper>
-          }
-        />
-        <Route
           path={`/projects`}
           element={
             <PageWrapper

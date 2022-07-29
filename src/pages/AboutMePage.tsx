@@ -79,9 +79,10 @@ const AboutMePage = (props: { changePageDesign: T_ChangePageDesign }) => {
                   developing games from an indie developer perspective.
                   <br />
                   <br />
-                  Since founding <Link to={"/projects"}>XP</Link> in May 2020 with a friend, I have been
-                  responsible for design, technical implementation, team
-                  coordination, and general project management.
+                  Since founding <Link to={"/projects"}>XP</Link> in May 2020
+                  with a friend, I have been responsible for design, technical
+                  implementation, team coordination, and general project
+                  management.
                   <br />
                   <br />
                   Through XP's immense growth over the years, I have also
@@ -133,17 +134,15 @@ const AboutMePage = (props: { changePageDesign: T_ChangePageDesign }) => {
             variant="panel-title"
             title={`Interested in hiring me for your Project?`}
           />
-          <Panel>
-            <a
-              className="menu-entry"
-              href="mailto:concode@outlook.de?subject=Hey, I'd like to hire you!"
-            >
-              <p>
-                Mail:{" "}
-                <AccentText variant="thicc">concode@namespace.media</AccentText>
-              </p>
-            </a>
-          </Panel>
+          <a
+            className="menu-entry"
+            href="mailto:concode@outlook.de?subject=Hey, I'd like to hire you!"
+          >
+            <p>
+              Mail:{" "}
+              <AccentText variant="thicc">concode@namespace.media</AccentText>
+            </p>
+          </a>
           <a className="menu-entry" href="https://twitter.com/ConnysCode">
             <p>
               Twitter: <AccentText variant="thicc">ConnysCode</AccentText>
