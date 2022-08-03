@@ -1,8 +1,5 @@
 import { useState } from "react";
-import {
-  Routes,
-  Route,
-} from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import "./css/globals/highlighting.css";
 import "./css/index.css";

@@ -57,7 +57,7 @@ const AboutMePage = (props: { changePageDesign: T_ChangePageDesign }) => {
                     ratings={[
                       { rating: 4.6, title: `Javascript` },
                       { rating: 4.6, title: `Typescript` },
-                      { rating: 4.6, title: `ReactJS` },
+                      { rating: 4, title: `ReactJS` },
                       { rating: 5, title: `HTML` },
                       { rating: 5, title: `CSS/SASS` },
                       { rating: 3.75, title: `Java` },
@@ -115,7 +115,7 @@ const AboutMePage = (props: { changePageDesign: T_ChangePageDesign }) => {
                 <Title variant="panel-title" title={`Software experience`} />
                 <SkillTile
                   ratings={[
-                    { rating: 5, title: `Office Suite` },
+                    { rating: 4.4, title: `Office Suite` },
                     { rating: 5, title: `VS Code` },
                     { rating: 5, title: `Adobe XD` },
                     { rating: 3.6, title: `Adobe Photoshop` },
@@ -133,25 +133,31 @@ const AboutMePage = (props: { changePageDesign: T_ChangePageDesign }) => {
             variant="panel-title"
             title={`Interested in hiring me for your Project?`}
           />
-          <a
-            className="menu-entry"
-            href="mailto:concode@outlook.de?subject=Hey, I'd like to hire you!"
-          >
-            <p>
-              Mail:{" "}
-              <AccentText variant="thicc">concode@namespace.media</AccentText>
-            </p>
-          </a>
-          <a className="menu-entry" href="https://twitter.com/ConnysCode">
-            <p>
-              Twitter: <AccentText variant="thicc">ConnysCode</AccentText>
-            </p>
-          </a>
-          <a className="menu-entry" href="https://www.fiverr.com/connyscode">
-            <p>
-              Fiverr: <AccentText variant="thicc">ConnysCode</AccentText>
-            </p>
-          </a>
+          <HireLink
+            link="mailto:concode@outlook.de?subject=Hey, I'd like to hire you!"
+            text={
+              <>
+                Mail:{" "}
+                <AccentText variant="thicc">concode@namespace.media</AccentText>
+              </>
+            }
+          />
+          <HireLink
+            link="https://www.twitter.com/ConnysCode"
+            text={
+              <>
+                Twitter: <AccentText variant="thicc">ConnysCode</AccentText>
+              </>
+            }
+          />
+          <HireLink
+            link="https://www.fiverr.com/connyscode"
+            text={
+              <>
+                Fiverr: <AccentText variant="thicc">ConnysCode</AccentText>
+              </>
+            }
+          />
         </>
       </Panel>
     </>
@@ -159,3 +165,11 @@ const AboutMePage = (props: { changePageDesign: T_ChangePageDesign }) => {
 };
 
 export default AboutMePage;
+
+const HireLink = (props: { link: string; text: JSX.Element }) => {
+  return (
+    <a className="menu-entry" href={props.link}>
+      <p>{props.text}</p>
+    </a>
+  );
+};
