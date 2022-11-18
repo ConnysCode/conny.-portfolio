@@ -1,3 +1,15 @@
 {
-    "liveSassCompile.settings.showOutputWindowOn": "Error"
+  "css.validate": false,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.organizeImports": true,
+    "source.addMissingImports": true
+  },
+  "files.associations": {
+    "*.scss": "tailwindcss"
+  },
+  "headwind.runOnSave": false,
+  "typescript.preferences.importModuleSpecifier": "non-relative"
 }
