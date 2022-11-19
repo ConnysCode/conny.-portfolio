@@ -7,3 +7,25 @@ body {
   height: 100vh;
   width: 100vw;
 }
+
+h1 {
+  @apply pb-4 text-[29px] leading-relaxed;
+}
+
+h2 {
+  @apply text-3xl leading-normal;
+}
+
+h4 {
+  @apply text-lg;
+}
+
+p {
+  @apply opacity-75;
+}
+
+pre {
+  font-size: 11.6px;
+  @apply rounded-t-md border-b-2 border-b-[#3399CB] bg-[#252525] p-3
+    shadow-md;
+}
